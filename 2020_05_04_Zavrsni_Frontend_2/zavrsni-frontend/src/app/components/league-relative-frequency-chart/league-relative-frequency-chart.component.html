@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row" style="margin-top: 1rem">
+    <div class="col-8">
+      <div style="display: block">
+        <canvas baseChart
+                [datasets]="scatterChartData"
+                [options]="scatterChartOptions"
+                [labels]="scatterChartLabels"
+                [colors]="lineChartColors"
+                [chartType]="scatterChartType">
+        </canvas>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="example-container">
+
+        <table mat-table [dataSource]="page">
+          <ng-container matColumnDef="goal">
+            <th mat-header-cell  class="th-left" *matHeaderCellDef> Gol </th>
+            <td mat-cell class="th-left" *matCellDef="let element"> {{element.goal}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="frequencyAll">
+            <th mat-header-cell class="th-right" *matHeaderCellDef> Sve </th>
+            <td mat-cell class="th-right" *matCellDef="let element"> {{element.all | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="frequencyHome">
+            <th mat-header-cell class="th-right" *matHeaderCellDef> Domaće </th>
+            <td mat-cell class="th-right" *matCellDef="let element"> {{element.home | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="frequencyGuest">
+            <th mat-header-cell class="th-right" *matHeaderCellDef> Gosti </th>
+            <td mat-cell class="th-right" *matCellDef="let element"> {{element.guest | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

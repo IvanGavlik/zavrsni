@@ -1,0 +1,24 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Najbolja obrana</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="example-container">
+        <table mat-table [dataSource]="page" style="width: 100%">
+          <ng-container matColumnDef="team">
+            <th mat-header-cell  class="th-left" *matHeaderCellDef> Ekipa </th>
+            <td mat-cell class="th-left" *matCellDef="let element"> {{element.teamName}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="receivedNumberOfGoalsPerGame">
+            <th mat-header-cell class="th-right" *matHeaderCellDef> Faktor obrane </th>
+            <td mat-cell class="th-right" *matCellDef="let element"> {{element.numberOfGoalsPerGame | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+  </mat-card-content>
+</mat-card>

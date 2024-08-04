@@ -1,0 +1,24 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Količina postignutih golova</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div>
+              <div style="display: block">
+                <canvas baseChart
+                        [data]="doughnutChartData"
+                        [labels]="doughnutChartLabels"
+                        [chartType]="doughnutChartType">
+                </canvas>
+              </div>
+            </div>
+            <p style="margin-top: 0.3rem" > Domaćin u prosjeku zabija {{ ligaReviewGoal.homeAverageGoals | number : '1.1-5' }} po utakmici, dok gost u prosjeku zabija {{ ligaReviewGoal.guestAverageGoals | number : '1.1-5' }} po utakmici </p>
+          </div>
+        </div>
+      </div>
+  </mat-card-content>
+</mat-card>

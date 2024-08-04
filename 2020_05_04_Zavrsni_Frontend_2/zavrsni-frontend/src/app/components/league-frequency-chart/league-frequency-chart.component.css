@@ -1,0 +1,57 @@
+.con {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+}
+.example-container {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}
+
+mat-form-field {
+  display: inline-table;
+}
+
+#center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+
+.w-10{
+  width: 10%;
+}
+
+.w-20{
+  width: 20%;
+}
+
+.w-30{
+  width: 30%;
+}
+
+
+.w-100{
+  width: 100px;
+}
+
+.th-center{
+  text-align: center;
+}
+.th-left{
+  text-align: left;
+}
+.th-right{
+  text-align: right;
+}
+
+.button-bac {
+  background: #17a2b8;
+  color: white;
+}
+

@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-12">
+    <div class="flex">
+      <div class="flex-item">
+        <div>
+          <canvas baseChart height="50px;"
+                  [datasets]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [options]="lineChartOptions"
+                  [colors]="lineChartColors"
+                  [legend]="lineChartLegend"
+                  [chartType]="lineChartType">
+          </canvas>
+          <!-- baseChart-->
+        </div>
+        <!-- flex-item -->
+      </div>
+      <!-- flex -->
+    </div>
+
+  </div>
+
+  <div class="col-12">
+    <br>
+  </div>
+  <div class="col-6">
+    <app-poisson-frequency-chart-table
+      [statisticalFeaturesTable]="statisticalFeaturesTableHomeTeam"
+      [title]="statisticalFeaturesChartHomeTeam.title">
+    </app-poisson-frequency-chart-table>
+  </div>
+
+
+  <div class="col-6">
+    <app-poisson-frequency-chart-table
+      [statisticalFeaturesTable]="statisticalFeaturesTableGuestTeam"
+      [title]="statisticalFeaturesChartGuestTeam.title"
+    >
+    </app-poisson-frequency-chart-table>
+  </div>
+
+</div> <!-- row grafikon -->

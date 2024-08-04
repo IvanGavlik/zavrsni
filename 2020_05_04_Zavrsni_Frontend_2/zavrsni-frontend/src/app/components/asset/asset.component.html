@@ -1,0 +1,34 @@
+<h1 class="mt-4"> Susreti </h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="example-container">
+      <table mat-table [dataSource]="page">
+
+          <ng-container matColumnDef="eventDay">
+            <th mat-header-cell class="th-left w-10" *matHeaderCellDef> Datum </th>
+            <td mat-cell class="th-left w-10" *matCellDef="let element"> {{element.eventDay }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="homeTeam">
+            <th mat-header-cell  class="th-right w-35" *matHeaderCellDef> Domaćin </th>
+            <td mat-cell class="th-right w-35" *matCellDef="let element"> {{element.homeTeam}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="score">
+            <th mat-header-cell class="th-center w-20" *matHeaderCellDef> Rezultat </th>
+            <td mat-cell class="th-center w-20" *matCellDef="let element"> {{element.homeTeamScore + ':' + element.guestTeamScore}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="guestTeam">
+            <th mat-header-cell class="th-left w-35" *matHeaderCellDef> Gost  </th>
+            <td mat-cell class="th-left w-35" *matCellDef="let element"> {{element.guestTeam }} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+  </div>
+  </div>
+</div>

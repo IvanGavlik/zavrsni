@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-12">
+    <h3>Predvidi</h3>
+  </div>
+  <div class="col-6">
+    <mat-card class="mat-elevation-10">
+      <div style="text-align: center; margin: 0 auto; padding: 0;">
+        <button mat-button (click)="whoWillWin()">Izračunaj tko će pobjediti</button>
+      </div>
+      <div *ngIf="poissonGuessHWW">
+        <br>
+        <h3> {{ poissonGuessHWW.poissonGuess }} </h3>
+        <p> {{ poissonGuessHWW.explanation }} </p>
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="col-6">
+    <mat-card class="mat-elevation-10">
+      <!-- Kolika je vjerojatnost da će [klub] zabiti [manje,više,jednako] od [1,2,3,4,5] ? -->
+      <h4> Kolika je vjerojatnost da će
+        <mat-form-field appearance="legacy" style="margin-right: 5px;">
+          <mat-label>Izaberi klub</mat-label>
+          <mat-select  [(value)]="teamIDHMG" (selectionChange)="selectTeamHMG($event)">
+            <mat-option [value]="0" > Izaberi klub </mat-option>
+            <mat-option *ngFor="let l of teams" [value]="l.name">
+              {{l.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        zabiti
+        <mat-form-field appearance="legacy" style="margin-right: 5px;">
+          <mat-label>operacija</mat-label>
+          <mat-select  [(value)]="operationID" (selectionChange)="selectOperation($event)">
+            <mat-option [value]="0" > Izaberi operaciju </mat-option>
+            <mat-option *ngFor="let o of operations" [value]="o">
+              {{ o }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="legacy" style="margin-right: 5px;">
+          <mat-label>golovi</mat-label>
+          <mat-select  [(value)]="goalID" (selectionChange)="selectGoal($event)">
+            <mat-option [value]="0" > Izaberi količinu golova </mat-option>
+            <mat-option *ngFor="let g of goals" [value]="g">
+              {{ g }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        ?
+
+        <br>
+        <button mat-button (click)="howManyGoalsCalculate()">Izračunaj</button>
+        <button mat-button (click)="howManyGoalsCalculationDelete()">Poništi</button>
+
+      </h4>
+
+      <div *ngIf="poissonGuessHMG">
+        <h3> {{ poissonGuessHMG.poissonGuess }} </h3>
+      </div>
+
+    </mat-card>
+  </div>
+</div> <!-- pitaj applickaij-->

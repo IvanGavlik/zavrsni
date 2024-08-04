@@ -1,0 +1,54 @@
+<h3 style="text-align: center" > {{ title }} </h3>
+<div class="example-container mat-elevation-z0">
+  <table mat-table [dataSource]="statisticalFeaturesTable">
+
+    <ng-container matColumnDef="goalId">
+      <th mat-header-cell style="text-align: right"  *matHeaderCellDef>  Gol </th>
+      <td mat-cell style="text-align: right"  *matCellDef="let element"> {{ element.goalId }} </td>
+      <td mat-footer-cell style="text-align: right" *matFooterCellDef> <b> Sum:  </b> </td>
+    </ng-container>
+
+    <!-- homeTeam Column -->
+    <ng-container matColumnDef="frequency">
+      <th mat-header-cell style="text-align: right"  *matHeaderCellDef> Frekvencija </th>
+      <td mat-cell  style="text-align: right"  *matCellDef="let element"> {{element.frequency | number : '1.1-5' }} </td>
+      <td mat-footer-cell style="text-align: right" *matFooterCellDef> {{ frequencySum | number : '1.1-5' }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="relativeFrequency">
+      <th mat-header-cell style="text-align: right"  *matHeaderCellDef> Relativna frekvencija </th>
+      <td mat-cell  style="text-align: right"  *matCellDef="let element"> {{element.relativeFrequency | number : '1.1-5' }} </td>
+      <td mat-footer-cell style="text-align: right" *matFooterCellDef>  {{ relativeFrequencySum | number : '1.1-5' }}</td>
+    </ng-container>
+
+    <!-- guestTeamScore Column -->
+    <ng-container matColumnDef="arithmeticMiddle">
+      <th mat-header-cell style="text-align: right"  *matHeaderCellDef> Aritmetička sredina </th>
+      <td mat-cell  style="text-align: right"  *matCellDef="let element"> {{element.arithmeticMiddle | number : '1.1-5' }} </td>
+      <td mat-footer-cell style="text-align: right" *matFooterCellDef>  {{ arithmeticMiddleSum | number : '1.1-5' }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="dispersion">
+      <th mat-header-cell style="text-align: right"  *matHeaderCellDef> Varijanca </th>
+      <td mat-cell style="text-align: right"  *matCellDef="let element"> {{element.dispersion | number : '1.1-5' }} </td>
+      <td mat-footer-cell style="text-align: right" *matFooterCellDef> {{ dispersionSum  | number : '1.1-5'}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+  </table>
+</div>
+
+<br>
+<div class="conSummary">
+  <h4>
+    Iz tablice zaključujemo:
+  </h4>
+  <p>
+    aritmetička sredina 𝑥̅= {{ this.arithmeticMiddleSum | number : '1.1-5' }}<br>
+    varijanca 𝜎2= {{ this.dispersionSum | number : '1.1-5' }} <br>
+    standardna devijacija 𝜎≈ {{ this.deviationSum | number : '1.1-5' }}
+  </p>
+</div>

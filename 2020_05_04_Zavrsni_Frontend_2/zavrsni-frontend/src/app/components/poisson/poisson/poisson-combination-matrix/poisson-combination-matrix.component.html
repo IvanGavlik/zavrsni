@@ -1,0 +1,75 @@
+<div>
+  <h3>Poisson izračun</h3>
+
+  <br>
+  <table style="width:100%; text-align: center;">
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th colspan="6"> {{ poissonMatrix.guestTeamName }} </th>
+    </tr>
+    <tr>
+      <th style="text-align: center">0</th>
+      <th style="text-align: center">1</th>
+      <th style="text-align: center">2</th>
+      <th style="text-align: center">3</th>
+      <th style="text-align: center">4</th>
+      <th style="text-align: center">5</th>
+    </tr>
+    <tr>
+      <td rowspan="6"> <b>  {{ poissonMatrix.homeTeamName }} </b> </td>
+      <td  style="text-align: center"> <b> 0 </b> </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index00 | number : '1.1-5'  }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index01 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index02 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index03 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index04 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index05 | number : '1.1-5' }} </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> <b> 1 </b> </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index10 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index11 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index12 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index13 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index14 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index15 | number : '1.1-5' }} </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> <b> 2 </b> </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index20 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index21 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index22 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index23 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index24 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index25 | number : '1.1-5' }} </td>
+    </tr>
+    <tr>
+      <td  style="text-align: center"> <b> 3 </b> </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index30 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index31 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index32 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index33 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index34 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index35 | number : '1.1-5' }} </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> <b> 4 </b> </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index40 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index41 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index42 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index43 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index44 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index45 | number : '1.1-5' }} </td>
+    </tr>
+    <tr>
+      <td  style="text-align: center"> <b> 5 </b> </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index50 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index51 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index52 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index53 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index54 | number : '1.1-5' }} </td>
+      <td style="text-align: center">{{ poissonMatrix.homeGuestTeamsPredictionMatrix.index55 | number : '1.1-5' }} </td>
+    </tr>
+  </table>
+
+</div>

@@ -1,0 +1,32 @@
+<div class="example-container"> <!--  class="mat-elevation-z3" -->
+  <table mat-table [dataSource]="page.pageItems">
+
+    <!-- homeTeam Column -->
+    <ng-container matColumnDef="homeTeam">
+      <th mat-header-cell  class="th-right w-40" *matHeaderCellDef> Domaćin </th>
+      <td mat-cell class="th-right w-40" *matCellDef="let element"> {{element.homeTeamName}} </td>
+    </ng-container>
+
+    <!-- score Column -->
+    <ng-container matColumnDef="score">
+      <th mat-header-cell class="th-center w-20" *matHeaderCellDef> Rezultat </th>
+      <td mat-cell class="th-center w-20" *matCellDef="let element"> {{element.homeTeamScore }} : {{element.guestTeamScore}} </td>
+    </ng-container>
+
+    <!-- guestTeamScore Column -->
+    <ng-container matColumnDef="guestTeamScore">
+      <th mat-header-cell class="th-left w-40" *matHeaderCellDef> Gost </th>
+      <td mat-cell class="th-left w-40" *matCellDef="let element"> {{element.guestTeamName}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator
+    [length]="page.totalElements"
+    [pageSize]="page.pageSize"
+    (page)="pageEvent($event)"
+    showFirstLastButtons
+  ></mat-paginator>
+
+</div>

@@ -1,0 +1,63 @@
+<h1 class="mt-4"> Pregled lige </h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-liga-review-best-attack>
+      </app-liga-review-best-attack>
+    </div>
+    <div class="col">
+      <app-liga-review-goals>
+      </app-liga-review-goals>
+    </div>
+    <div class="col">
+      <app-liga-review-best-defense>
+      </app-liga-review-best-defense>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 1rem; margin-bottom: 1rem" >
+    <div class="col">
+      <mat-accordion>
+        <!-- Poredak po kolicin golova -->
+        <mat-expansion-panel>
+
+          <mat-expansion-panel-header>
+            <mat-panel-title style="font-size: 20px; font-family: 'Roboto', 'Helvetica Neue', 'sans-serif'; font-weight: 500; color:rgba(0,0,0,.87); margin-left: 46px;">
+              Poredak
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <app-league-statistics-goals>
+          </app-league-statistics-goals>
+
+        </mat-expansion-panel>
+        <!-- second panel Grafs -->
+        <mat-expansion-panel>
+
+          <mat-expansion-panel-header>
+            <mat-panel-title style="font-size: 20px; font-family: 'Roboto', 'Helvetica Neue', 'sans-serif'; font-weight: 500; color:rgba(0,0,0,.87); margin-left: 46px;">
+              Frekvencija golova
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <mat-tab-group>
+            <mat-tab label="Grafikon frekvencija">
+              <app-league-frequency-chart></app-league-frequency-chart>
+            </mat-tab>
+            <mat-tab label="Poligon frekvencija">
+              <app-league-frequency-polygon>
+              </app-league-frequency-polygon>
+            </mat-tab>
+            <mat-tab label="Grafikon relativnih frekvencija">
+              <app-league-relative-frequency-chart> </app-league-relative-frequency-chart>
+            </mat-tab>
+            <mat-tab label="Poligon relativnih frekvencija">
+              <app-league-relative-frequency-polygon></app-league-relative-frequency-polygon>
+            </mat-tab>
+          </mat-tab-group>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,35 @@
+<!--
+// TODO i NEED FORM GROUP https://blog.angular-university.io/angular-material-dialog/
+-->
+<h2 mat-dialog-title> Kreiraj susret </h2>
+
+<mat-dialog-content>
+  <div class="row" style="margin-bottom: 2rem">
+
+    <div class="col">
+      <mat-label>Domaćin</mat-label>
+      <br>
+      <mat-select [(value)]="selectedHomeTeam" style="width: 20vh">
+        <mat-option *ngFor="let team of teams" [value]="team">
+          {{ team }}
+        </mat-option>
+      </mat-select>
+    </div>
+
+    <div class="col">
+      <mat-label>Gost</mat-label>
+      <br>
+      <mat-select [(value)]="selectedGuessTeam" style="width: 20vh">
+        <mat-option *ngFor="let team of teams" [value]="team">
+          {{ team }}
+        </mat-option>
+      </mat-select>
+    </div>
+
+  </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button style="border: 1px solid #FC7307" mat-button (click)="save()"> Potvrdi </button>
+</mat-dialog-actions>

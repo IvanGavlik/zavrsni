@@ -1,0 +1,71 @@
+<ng-container *ngIf="selectedTeam">
+  <div style="border: 1px solid #236AB9;">
+
+      <div class="row" style="margin: 0 !important;">
+        <div class="col header">
+          <!-- https://www.w3schools.com/colors/colors_complementary.asp -->
+          <p> Najvjerojatniji rezultat </p>
+        </div>
+      </div>
+
+
+      <div class="row ekipa">
+        <div class="col-5" style="text-align: left;" >
+          <p> {{ poissonCard.homeTeamName }} <p>
+        </div>
+        <div class="col-2" style="text-align: center;">
+          <p> {{ poissonCard.homeTeamGoalGuess }} : {{ poissonCard.guestTeamGoalGuess }} <br>
+         <span class="probability">vjerojatnost {{ (poissonCard.probabilityOfGuess  * 100) | number : '1.1-2' }} % </span>
+          </p>
+        </div>
+        <div class="col-5" style="text-align: right;">
+          <p> {{ poissonCard.guestTeamName }}</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: -1.1rem">
+        <div class="col-4 lambda">
+          <h2> Lambda {{ poissonCard.homeTeamLambda | number : '1.1-5' }}  </h2>
+        </div>
+        <div class="col-4" style="text-align: center;">
+          <div>
+            <div style="display: block">
+              <canvas baseChart
+                      [data]="doughnutChartData"
+                      [labels]="doughnutChartLabels"
+                      [chartType]="doughnutChartType">
+              </canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 lambda">
+          <h2> Lambda {{ poissonCard.guestTeamLambda | number : '1.1-5' }} </h2>
+        </div>
+      </div>
+
+      <div class="row"> <!-- todo kada sredim tablice style="margin-top: -2.1rem" -->
+        <div class="col-3">
+        </div>
+        <div class="col-3" style="text-align: left;">
+          <p> Faktor napada doma {{ poissonCard.homeTeamHomeAttackFactor | number : '1.1-5' }}<br>Faktor obrane doma {{ poissonCard.homeTeamHomeDefenseFactor  | number : '1.1-5'}} </p>
+        </div>
+        <div class="col-3" style="text-align: right;">
+          <p>Faktor napada u gostima {{ poissonCard.guestTeamGuestAttackFactor | number : '1.1-5' }}<br>Faktor obrane u gostima   {{ poissonCard.guestTeamGuestDefenseFactor | number : '1.1-5' }} </p>
+        </div>
+        <div class="col-3">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <app-poisson-card-details [homeTeamName]="poissonCard.homeTeamName" [guessTeamName]="poissonCard.guestTeamName" [probability]="probability" ></app-poisson-card-details>
+        </div>
+      </div>
+  </div>
+  <div class="row" style="margin-top: 1rem" [hidden]="this.formOutside === 'true'" >
+    <div class="col"  style="text-align: right;">
+      <button  style="border: 1px solid #FC7307"   mat-button (click)="createMatch()"> Novo predviđanje rezultata </button>
+    </div>
+  </div>
+</ng-container>
+

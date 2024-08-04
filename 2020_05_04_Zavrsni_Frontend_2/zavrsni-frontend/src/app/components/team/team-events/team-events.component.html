@@ -1,0 +1,18 @@
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="ddtTrigger" class="row-border hover">
+  <thead>
+  <tr>
+    <th style="text-align: center">Datum</th>
+    <th style="text-align: right">Domaćin</th>
+    <th style="text-align: center">Rezultat</th>
+    <th style="text-align: left;">Gost</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let event of events">
+    <td style="text-align: center">{{event.eventDay}}</td>
+    <td style="text-align: right"> {{event.homeTeam }}</td>
+    <td style="text-align: center"> {{event.homeTeamScore }} : {{event.guestTeamScore}}</td>
+    <td style="text-align: left"> {{event.guestTeam }}</td>
+  </tr>
+  </tbody>
+</table>

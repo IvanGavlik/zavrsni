@@ -1,0 +1,14 @@
+Project uses
+- angular 9
+- bootstrap 4
+- reducer https://ngrx.io/guide/store/reducers
+- angular material tables (https://material.angular.io/components/table/overview)
+- ng2-charts (https://valor-software.com/ng2-charts/#/GeneralInfo, chart.js)
+- angular material design theme Indigo/Pink with
+  global angular material typography style and browser animations for material design
+
+start
+ng serve --open
+
+production url: https://gentle-fjord-13059.herokuapp.com/events
+

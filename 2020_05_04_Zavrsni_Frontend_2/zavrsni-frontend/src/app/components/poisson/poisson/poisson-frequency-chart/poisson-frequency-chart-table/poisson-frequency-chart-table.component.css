@@ -1,0 +1,13 @@
+.example-container {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.conSummary {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+}

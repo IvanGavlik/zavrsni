@@ -1,0 +1,13 @@
+URL: https://nameless-river-96396.herokuapp.com/ (https://nameless-river-96396.herokuapp.com/v1/...)
+
+For development you have dev DB see: hr.vsite.igavlik.zavrsnirad.config.DatabaseConfig
+
+Currently rest controllers must have ResponseEntity with locationUri and Access-Control-Allow-Origin in header.
+This is because of heroku server
+
+How to:
+https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
+
+TODO:
+- there are postman scripts that can must be imported here in this project
+- log

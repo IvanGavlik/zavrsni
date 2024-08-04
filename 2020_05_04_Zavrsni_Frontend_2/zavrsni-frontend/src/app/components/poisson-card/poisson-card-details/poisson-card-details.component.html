@@ -1,0 +1,277 @@
+<ng-container *ngIf="!showDetail">
+  <div class="row" style="margin-bottom: .5rem">
+    <div class="col" style="text-align: center;">
+      <button style="border: 1px solid #FC7307" mat-button (click)="loadDetails()"> Saznaj više </button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="showDetail">
+  <div class="row">
+    <div class="col" style="text-align: center;">
+      <mat-horizontal-stepper linear #stepper [disableRipple]="'true'" [contentEditable]="'false'"  >
+
+        <mat-step>
+          <ng-template matStepLabel>
+            Golovi
+          </ng-template>
+
+          <div class="row" style="margin-top: 2rem">
+            <div class="col" style="text-align: left;">
+              <p> Ekipa </p>
+              <p> Odigrano utakmica </p>
+              <p> Postignutno </p>
+              <p> Postignutno po utakmici</p>
+              <p> Primljeno </p>
+              <p> Primljeno po utakmici</p>
+            </div>
+
+            <div class="col" style="text-align: right;">
+              <p> <b> {{ poissonCardDetails.homeTeamName }} </b> </p>
+              <p> {{ poissonCardDetails.homeTeamHomeNumberOfGames }} </p>
+              <p>  {{ poissonCardDetails.homeTeamHomeNumberOfGoals }} </p>
+              <p>  {{ poissonCardDetails.homeTeamHomeNumberOfGoalsAverage | number : '1.1-5'}}   </p>
+              <p>  {{ poissonCardDetails.homeTeamHomeNumberOfGoalsReceived }}  </p>
+              <p>  {{ poissonCardDetails.homeTeamHomeNumberOfGoalsReceivedAverage | number : '1.1-5'  }}  </p>
+            </div>
+
+            <div class="col" style="text-align: right;">
+              <p> <b> Liga Doma </b> </p>
+              <p> {{ poissonCardDetails.leagueHomeNumberOfGames }} </p>
+              <p>  {{ poissonCardDetails.leagueHomeNumberOfGoals }} </p>
+              <p> {{ poissonCardDetails.leagueHomeNumberOfGoalsAverage | number : '1.1-5'  }}</p>
+              <p>  {{ poissonCardDetails.leagueHomeNumberOfGoalsReceived }}  </p>
+              <p>   {{ poissonCardDetails.leagueHomeNumberOfGoalsReceivedAverage | number : '1.1-5' }}  </p>
+            </div>
+
+
+            <div class="col" style="text-align: right;">
+              <p> <b> {{ poissonCardDetails.guestTeamName }} </b> </p>
+              <p> {{ poissonCardDetails.guestTeamGuestNumberOfGames }} </p>
+              <p>  {{ poissonCardDetails.guestTeamGuestNumberOfGoals }} </p>
+              <p>  {{ poissonCardDetails.guestTeamGuestNumberOfGoalsAverage | number : '1.1-5'  }} </p>
+              <p>  {{ poissonCardDetails.guestTeamGuestNumberOfGoalsReceived }}  </p>
+              <p>  {{ poissonCardDetails.guestTeamGuestNumberOfGoalsReceivedAverage | number : '1.1-5' }}  </p>
+            </div>
+
+            <div class="col" style="text-align: right;">
+              <p> <b> Liga Gost </b> </p>
+              <p> {{ poissonCardDetails.leagueGuestNumberOfGames }} </p>
+              <p>  {{ poissonCardDetails.leagueGuestNumberOfGoals }} </p>
+              <p>  {{ poissonCardDetails.leagueGuestNumberOfGoalsAverage | number : '1.1-5' }} </p>
+              <p>  {{ poissonCardDetails.leagueGuestNumberOfGoalsReceived }} </p>
+              <p>  {{ poissonCardDetails.leagueGuestNumberOfGoalsReceivedAverage | number : '1.1-5'  }} </p>
+            </div>
+          </div>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>
+            Faktor momčadi
+          </ng-template>
+
+          <div class="row" style="margin-top: 2rem; text-align: right;">
+            <div class="col-2">
+            </div>
+            <div class="col-6">
+              <p> <b> Formula </b></p>
+            </div>
+            <div class="col-2">
+              <p> <b> {{ poissonCardDetails.homeTeamName }} </b>  </p>
+            </div>
+            <div class="col-2">
+              <p> <b>  {{ poissonCardDetails.guestTeamName }} </b>  </p>
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col-2" style="text-align: left;">
+              <p> Faktor napada </p>
+            </div>
+            <div class="col-6" style="text-align: right;">
+              <p> Prosjek postignutih golova kroz prosjek lige u broju postignutih golva </p>
+            </div>
+            <div class="col-2" style="text-align: right;">
+              <p> {{ poissonCardDetails.homeTeamHomeNumberOfGoalsAverage | number : '1.1-5'  }} / {{ poissonCardDetails.leagueHomeNumberOfGoalsAverage | number : '1.1-5'  }} = <b> {{ getHomeTeamAttach() | number : '1.1-5' }}  </b> </p>
+            </div>
+            <div class="col-2" style="text-align: right;">
+              <p> {{ poissonCardDetails.guestTeamGuestNumberOfGoalsAverage |  number : '1.1-5' }} / {{ poissonCardDetails.leagueGuestNumberOfGoalsAverage |  number : '1.1-5'  }} = <b> {{ getGuessAttach() | number : '1.1-5' }} </b> </p>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: .5rem">
+            <div class="col-2" style="text-align: left;">
+              <p> Faktor obrane </p>
+            </div>
+            <div class="col-6" style="text-align: right;">
+              <p> Prosjek primljenih golova kroz prosjeke lige u broju primljenih golva </p>
+            </div>
+            <div class="col-2" style="text-align: right;">
+              <p> {{ poissonCardDetails.homeTeamHomeNumberOfGoalsReceivedAverage |  number : '1.1-5' }} / {{ poissonCardDetails.leagueGuestNumberOfGoalsAverage |  number : '1.1-5'  }} = <b> {{ getHomeDefense() |  number : '1.1-5'  }} </b> </p>
+            </div>
+            <div class="col-2" style="text-align: right;">
+              <p> {{ poissonCardDetails.guestTeamGuestNumberOfGoalsReceivedAverage |  number : '1.1-5' }} / {{ poissonCardDetails.leagueHomeNumberOfGoalsAverage |  number : '1.1-5'  }} = <b> {{ getGuessDefence() |  number : '1.1-5'  }} </b> </p>
+            </div>
+          </div>
+
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>
+            Lambda
+          </ng-template>
+
+          <div class="row">
+            <div class="col-2" style="text-align: left">
+              <p><b> Ekipa </b></p>
+            </div>
+            <div class="col-5" style="text-align: right">
+              <p> <b> {{ poissonCardDetails.homeTeamName }} </b> </p>
+            </div>
+            <div class="col-5" style="text-align: right">
+              <p><b> {{ poissonCardDetails.guestTeamName}} </b> </p>
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col-2" style="text-align: left">
+              <p> Formula </p>
+            </div>
+            <div class="col-5" style="text-align: right" >
+              <p> Faktor napada doma ({{ poissonCardDetails.homeTeamName }}) * Faktor obrane gost ({{ poissonCardDetails.guestTeamName}}) * Prosjek lige napad gost </p>
+
+            </div>
+            <div class="col-5" style="text-align: right">
+              <p> Faktor napada gost ({{ poissonCardDetails.guestTeamName}}) * Faktor obrane domaćin ({{ poissonCardDetails.homeTeamName }}) * Prosjek lige obrana domaćin</p>
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col-2" style="text-align: left">
+              <p> Izračun </p>
+            </div>
+            <div class="col-5" style="text-align: right">
+              <p> {{ getHomeTeamAttach()  |  number : '1.1-5' }} * {{ getGuessDefence()  |  number : '1.1-5' }} * {{ poissonCardDetails.leagueHomeNumberOfGoalsAverage  |  number : '1.1-5' }} = <b> {{ getLambdaHome()  |  number : '1.1-5' }} </b> </p>
+            </div>
+            <div class="col-5" style="text-align: right">
+              <p> {{ getGuessAttach()  |  number : '1.1-5' }} * {{ getHomeDefense()  |  number : '1.1-5' }} * {{ poissonCardDetails.leagueGuestNumberOfGoalsAverage  |  number : '1.1-5' }} = <b> {{ getLambdaGuess()  |  number : '1.1-5' }} </b> </p>
+            </div>
+          </div>
+        </mat-step>
+
+        <mat-step>
+          <ng-template matStepLabel>
+            Izračun najvjerojatnijeg rezultata
+          </ng-template>
+
+          <div class="row">
+            <div class="col">
+              Poisson: (X=k)=  (λ^k e^(-λ))/k!
+            </div>
+          </div>
+
+          <div class="row" style="text-align: right; margin-top: 2rem;">
+            <div class="col-2" style="text-align: left">
+              <p> <b> k </b>  </p>
+            </div>
+            <div class="col-5">
+              <p> <b> λ {{ poissonCardDetails.homeTeamName }}  ({{ getLambdaHome() | number : '1.1-5' }})  </b> </p>
+            </div>
+            <div class="col-5">
+              <p> <b> λ {{ poissonCardDetails.guestTeamName }} ({{ getLambdaGuess() | number : '1.1-5' }}) </b> </p>
+            </div>
+          </div>
+
+          <div class="row" style="text-align: right">
+            <div class="col-2" style="text-align: left">
+              <p> k = 0  </p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.homeTeamProbabilityOf0  |  number : '1.1-5' }}  </p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.guestTeamProbabilityOf0 |  number : '1.1-5'  }}  </p>
+            </div>
+          </div>
+
+          <div class="row" style="text-align: right">
+            <div class="col-2" style="text-align: left">
+              <p> k = 1 </p>
+            </div>
+            <div class="col-5">
+              <p>  {{ probability.homeTeamProbabilityOf1  |  number : '1.1-5' }}</p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.guestTeamProbabilityOf1  |  number : '1.1-5' }} </p>
+            </div>
+          </div>
+
+          <div class="row" style="text-align: right">
+            <div class="col-2" style="text-align: left">
+              <p> k = 2 </p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.homeTeamProbabilityOf2 |  number : '1.1-5'  }} </p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.guestTeamProbabilityOf2 |  number : '1.1-5' }} </p>
+            </div>
+          </div>
+
+          <div class="row" style="text-align: right">
+            <div class="col-2" style="text-align: left">
+              <p> k = 3  </p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.homeTeamProbabilityOf3 |  number : '1.1-5'  }} </p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.guestTeamProbabilityOf3 |  number : '1.1-5'  }}  </p>
+            </div>
+          </div>
+
+          <div class="row" style="text-align: right">
+            <div class="col-2" style="text-align: left">
+              <p> k = 4  </p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.homeTeamProbabilityOf4  |  number : '1.1-5' }} </p>
+            </div>
+            <div class="col-5">
+              <p>  {{ probability.guestTeamProbabilityOf4 |  number : '1.1-5'  }}  </p>
+            </div>
+          </div>
+
+          <div class="row" style="text-align: right">
+            <div class="col-2" style="text-align: left">
+              <p> k = 5  </p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.homeTeamProbabilityOf5  |  number : '1.1-5'  }} </p>
+            </div>
+            <div class="col-5">
+              <p> {{ probability.guestTeamProbabilityOf5  |  number : '1.1-5'  }} </p>
+            </div>
+          </div>
+
+
+
+          <div class="row" style="margin-top: 2rem">
+            <div class="col">
+           <!--   Iz tablice se vidi da će Celtic FC zabiti jedan gol s vjerojatnošću od 0.30408. Rangers FC   najvjerojatnije neće zabiti gol s vjerojatnošću 0.50867. Prema tome, najvjerojatniji ishod 1 : 0  dolazi s vjerojatnošću 0.30408*0.50867= 0.15477 ili 15.47 %.
+            -->
+            </div>
+          </div>
+        </mat-step>
+
+      </mat-horizontal-stepper>
+    </div>
+  </div>
+
+  <div class="row" style="margin-bottom: .5rem">
+    <div class="col" style="text-align: center;">
+      <button style="border: 1px solid #FC7307" mat-button (click)="loadDetails()"> Zatvori </button>
+    </div>
+  </div>
+</ng-container>
+

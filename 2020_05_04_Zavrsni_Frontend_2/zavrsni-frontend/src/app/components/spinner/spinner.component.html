@@ -1,0 +1,5 @@
+
+<div *ngIf="spinner.display" >
+  <mat-spinner  [diameter]="50" style="margin:0 auto;"  mode="indeterminate"></mat-spinner>
+  <p *ngIf=spinner.msg style="text-align: center; font-size: 10px;"> {{ spinner.msg }}</p>
+</div>

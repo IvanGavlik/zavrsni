@@ -1,0 +1,191 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button mat-button style="width: 100%" [ngClass]="isAll ? 'button-bac': ''"
+              (click)="setAllFlag()"
+      > Sve utakmice </button>
+    </div>
+    <div class="col">
+      <button mat-button style="width: 100%" [ngClass]="isHome ? 'button-bac': ''"
+              (click)="setHomeFlag()"
+      > Domaće utakmice </button>
+    </div>
+    <div class="col">
+      <button mat-button style="width: 100%" [ngClass]="isGuest ? 'button-bac': ''"
+        (click)="setGuestFlag()"
+      > Gostujuće utakmice </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" *ngIf="isAll">
+      <div class="example-container">
+        <table mat-table [dataSource]="page">
+          <ng-container matColumnDef="team">
+            <th mat-header-cell  class="th-left w-15" *matHeaderCellDef> Ekipa </th>
+            <td mat-cell class="th-left-15" *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="playedMatch">
+            <th mat-header-cell class="th-right w-11" *matHeaderCellDef> Odigrano utakmica </th>
+            <td mat-cell class="th-right w-10" *matCellDef="let element"> {{element.allNumberOFGames }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsScored">
+            <th mat-header-cell class="th-right w-11" *matHeaderCellDef> Postignuti </th>
+            <td mat-cell class="th-right w-11" *matCellDef="let element"> {{element.allNumberOFGoals }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsScoredAverage">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Postignuti po utakmici </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.allAverageGoals | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="attackFactor">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Faktor napada </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.allAttackFactor | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsConceded">
+            <th mat-header-cell class="th-right w-5" *matHeaderCellDef> Primljeni </th>
+            <td mat-cell class="th-right w-5" *matCellDef="let element"> {{element.receivedAllNumberOFGoals}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsConcededAverage">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Primljeni po utakmici </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.receivedAllAverageGoals | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="defenseFactor">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Faktor obrane </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.allDefensekFactor | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+    </div>
+    <div class="col" *ngIf="isHome">
+      <div class="example-container">
+        <table mat-table [dataSource]="page">
+          <ng-container matColumnDef="team">
+            <th mat-header-cell  class="th-left w-15" *matHeaderCellDef> Ekipa </th>
+            <td mat-cell class="th-left-15" *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="playedMatch">
+            <th mat-header-cell class="th-right w-11" *matHeaderCellDef> Odigrano utakmica </th>
+            <td mat-cell class="th-right w-10" *matCellDef="let element"> {{element.homeNumberOFGames }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsScored">
+            <th mat-header-cell class="th-right w-11" *matHeaderCellDef> Postignuti </th>
+            <td mat-cell class="th-right w-11" *matCellDef="let element"> {{element.homeNumberOFGoals }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsScoredAverage">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Postignuti po utakmici </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.homeAverageGoals | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="attackFactor">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Faktor napada </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.asHomeAttackFactor | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsConceded">
+            <th mat-header-cell class="th-right w-5" *matHeaderCellDef> Primljeni </th>
+            <td mat-cell class="th-right w-5" *matCellDef="let element"> {{element.receivedHomeNumberOFGoals}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsConcededAverage">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Primljeni po utakmici </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.receivedHomeAverageGoals | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="defenseFactor">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Faktor obrane </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.asHomeDefensekFactor | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+    </div>
+    <div class="col" *ngIf="isGuest">
+      <div class="example-container">
+        <table mat-table [dataSource]="page">
+          <ng-container matColumnDef="team">
+            <th mat-header-cell  class="th-left w-15" *matHeaderCellDef> Ekipa </th>
+            <td mat-cell class="th-left-15" *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="playedMatch">
+            <th mat-header-cell class="th-right w-11" *matHeaderCellDef> Odigrano utakmica </th>
+            <td mat-cell class="th-right w-10" *matCellDef="let element"> {{element.guestNumberOFGames }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsScored">
+            <th mat-header-cell class="th-right w-11" *matHeaderCellDef> Postignuti </th>
+            <td mat-cell class="th-right w-11" *matCellDef="let element"> {{element.guestNumberOFGoals }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsScoredAverage">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Postignuti po utakmici </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.guestAverageGoals | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="attackFactor">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Faktor napada </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.asGuestAttackFactor | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsConceded">
+            <th mat-header-cell class="th-right w-5" *matHeaderCellDef> Primljeni </th>
+            <td mat-cell class="th-right w-5" *matCellDef="let element"> {{element.receivedGuestNumberOFGoals}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="goalsConcededAverage">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Primljeni po utakmici </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.receivedGuestAverageGoals | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="defenseFactor">
+            <th mat-header-cell class="th-right w-12" *matHeaderCellDef> Faktor obrane </th>
+            <td mat-cell class="th-right w-12" *matCellDef="let element"> {{element.asGuestDefensekFactor | number : '1.1-5' }} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 2rem">
+    <div class="col" style="margin-left: 26px">
+      <h4> <b> Liga </b> </h4>
+      <p> Odigrano utakmica </p>
+      <p> Postignuti  </p>
+      <p> Postignuti po utakmici 	</p>
+    </div>
+    <div class="col" style="margin-left: 26px; text-align: right">
+      <h4> <b> Sve </b> </h4>
+      <p> {{ leagueReview.allNumberOFGames }} </p>
+      <p> {{ leagueReview.allNumberOFGoals }} </p>
+      <p> {{ leagueReview.allAverageGoals | number : '1.1-5' }} </p>
+    </div>
+    <div class="col" style="margin-left: 26px; text-align: right">
+      <h4> <b> Domaćin </b> </h4>
+      <p> {{ leagueReview.homeNumberOFGames }} </p>
+      <p> {{ leagueReview.homeNumberOFGoals }} </p>
+      <p> {{ leagueReview.homeAverageGoals | number : '1.1-5' }} </p>
+    </div>
+    <div class="col" style="margin-left: 26px; text-align: right">
+      <h4> <b>  Gost </b> </h4>
+      <p> {{ leagueReview.guestNumberOFGames }} </p>
+      <p> {{ leagueReview.guestNumberOFGoals }} </p>
+      <p> {{ leagueReview.guestAverageGoals | number : '1.1-5' }} </p>
+    </div>
+  </div>
+</div>

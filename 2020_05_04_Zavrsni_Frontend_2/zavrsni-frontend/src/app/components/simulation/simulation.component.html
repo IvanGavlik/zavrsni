@@ -1,0 +1,9 @@
+<h1 class="mt-4">Simulacija kola</h1>
+
+<div class="container" *ngFor="let item of poissonCards;" >
+  <div class="row" style="margin-bottom: 0.5rem; margin-top: .5rem; ">
+    <div class="col">
+      <app-poisson-card [formOutside]="'true'" [poissonCard]="item" > </app-poisson-card>
+    </div>
+  </div>
+</div>
