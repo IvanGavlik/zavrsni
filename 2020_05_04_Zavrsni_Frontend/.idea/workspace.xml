@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16478a8b-5c58-49bf-924d-47e44dbd7006" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/zavrsni-frontend/.editorconfig" previewFile="$PROJECT_DIR$/zavrsni-frontend/src/app/components/poisson-card/poisson-card.component.html" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/zavrsni-frontend" value="testMQTTLayerInAngular" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/zavrsni-frontend" />
+  </component>
+  <component name="ProjectId" id="1eqrAi8gFrZgQhNZoUfEZkn5we2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/javascrpt-playground/02_FP_JS_OPEN_SOURCE_PROJECT_CODE_EXAMPLE/xod" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Users\ivan.gavlik\2020_05_04_Zavrsni_Frontend\zavrsni-frontend\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ivan.gavlik\2020_05_04_Zavrsni_Frontend\zavrsni-frontend\src\app\model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ivan.gavlik\2020_05_04_Zavrsni_Frontend\zavrsni-frontend\src\app\components\league-relative-frequency-chart" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16478a8b-5c58-49bf-924d-47e44dbd7006" name="Default Changelist" comment="" />
+      <created>1595059822666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595059822666</updated>
+      <workItem from="1595059823983" duration="5426000" />
+      <workItem from="1595068312101" duration="20607000" />
+      <workItem from="1595172140064" duration="6063000" />
+      <workItem from="1595179367711" duration="4271000" />
+      <workItem from="1595429721753" duration="2347000" />
+      <workItem from="1595536396729" duration="28000" />
+      <workItem from="1595666592948" duration="1675000" />
+      <workItem from="1595971875961" duration="2666000" />
+      <workItem from="1596160758261" duration="20000" />
+      <workItem from="1596381328065" duration="9904000" />
+      <workItem from="1596473007441" duration="15648000" />
+      <workItem from="1596569529361" duration="11907000" />
+      <workItem from="1596582942586" duration="31000" />
+      <workItem from="1596746595186" duration="437000" />
+      <workItem from="1602872031656" duration="6828000" />
+      <workItem from="1602919346380" duration="3841000" />
+      <workItem from="1602953828602" duration="10906000" />
+      <workItem from="1603009775771" duration="12000" />
+      <workItem from="1603028409779" duration="8204000" />
+      <workItem from="1603306252404" duration="4300000" />
+      <workItem from="1603359115239" duration="2236000" />
+      <workItem from="1603448263016" duration="3885000" />
+      <workItem from="1603477519126" duration="6000" />
+      <workItem from="1603477654654" duration="1151000" />
+      <workItem from="1603573520992" duration="909000" />
+      <workItem from="1603711980887" duration="7000" />
+      <workItem from="1603884108587" duration="816000" />
+      <workItem from="1603885144262" duration="9850000" />
+      <workItem from="1603897606081" duration="1439000" />
+      <workItem from="1603971521280" duration="11387000" />
+      <workItem from="1604003367695" duration="8101000" />
+      <workItem from="1604045367277" duration="7004000" />
+      <workItem from="1604057637036" duration="6584000" />
+      <workItem from="1604127701249" duration="858000" />
+      <workItem from="1604309843352" duration="55000" />
+      <workItem from="1605599589148" duration="768000" />
+      <workItem from="1614964730765" duration="1115000" />
+      <workItem from="1615377882350" duration="2148000" />
+      <workItem from="1615485850155" duration="2663000" />
+      <workItem from="1615500717809" duration="2297000" />
+      <workItem from="1615536385719" duration="23000" />
+      <workItem from="1615566298227" duration="11453000" />
+      <workItem from="1615656824190" duration="3555000" />
+      <workItem from="1617736621434" duration="2664000" />
+      <workItem from="1617774773159" duration="17000" />
+      <workItem from="1617973155707" duration="4247000" />
+      <workItem from="1618042582025" duration="2391000" />
+      <workItem from="1618079689247" duration="314000" />
+      <workItem from="1618167593706" duration="146000" />
+      <workItem from="1618258310402" duration="6572000" />
+      <workItem from="1618296461866" duration="29000" />
+      <workItem from="1618345224223" duration="5716000" />
+      <workItem from="1618382182068" duration="27000" />
+      <workItem from="1618512319656" duration="4197000" />
+      <workItem from="1618551658749" duration="365000" />
+      <workItem from="1618687849715" duration="4006000" />
+      <workItem from="1618769604520" duration="1812000" />
+      <workItem from="1618812096938" duration="10000" />
+      <workItem from="1618855654811" duration="2038000" />
+      <workItem from="1619003327918" duration="7959000" />
+      <workItem from="1619014395708" duration="50000" />
+      <workItem from="1619014779243" duration="4340000" />
+      <workItem from="1619031056221" duration="40000" />
+      <workItem from="1619182955730" duration="2864000" />
+      <workItem from="1619203299876" duration="5982000" />
+      <workItem from="1619250088341" duration="4460000" />
+      <workItem from="1619274431457" duration="496000" />
+      <workItem from="1619344241118" duration="1289000" />
+      <workItem from="1619347078997" duration="1214000" />
+      <workItem from="1619416855139" duration="10000" />
+      <workItem from="1619462724222" duration="2811000" />
+      <workItem from="1619543997471" duration="5747000" />
+      <workItem from="1619718001818" duration="609000" />
+      <workItem from="1619719578730" duration="2306000" />
+      <workItem from="1619772874567" duration="3336000" />
+      <workItem from="1619790519562" duration="7734000" />
+      <workItem from="1619941073173" duration="9760000" />
+      <workItem from="1619953583466" duration="4652000" />
+      <workItem from="1619978062202" duration="3542000" />
+      <workItem from="1620020892514" duration="10000" />
+      <workItem from="1620157808660" duration="3873000" />
+      <workItem from="1620192141524" duration="18000" />
+      <workItem from="1620202087705" duration="303000" />
+      <workItem from="1620205240457" duration="4968000" />
+      <workItem from="1620238922292" duration="4341000" />
+      <workItem from="1620277574477" duration="10000" />
+      <workItem from="1620470852144" duration="219000" />
+      <workItem from="1620494235268" duration="2406000" />
+      <workItem from="1620500064864" duration="657000" />
+      <workItem from="1620538535989" duration="4644000" />
+      <workItem from="1620552462252" duration="2727000" />
+      <workItem from="1620574241151" duration="1151000" />
+      <workItem from="1620666087375" duration="2014000" />
+      <workItem from="1620714816069" duration="8000" />
+      <workItem from="1620760914164" duration="6000" />
+      <workItem from="1620760937247" duration="8395000" />
+      <workItem from="1620775651455" duration="1517000" />
+      <workItem from="1620803199190" duration="38000" />
+      <workItem from="1620890311865" duration="693000" />
+      <workItem from="1620933072390" duration="7375000" />
+      <workItem from="1620971525192" duration="21000" />
+      <workItem from="1621197732983" duration="621000" />
+      <workItem from="1621233917076" duration="11000" />
+      <workItem from="1621277216553" duration="599000" />
+      <workItem from="1621320746878" duration="210000" />
+      <workItem from="1621403915185" duration="1202000" />
+      <workItem from="1621435373872" duration="653000" />
+      <workItem from="1621492931682" duration="10000" />
+      <workItem from="1621529673808" duration="634000" />
+      <workItem from="1621543124092" duration="686000" />
+      <workItem from="1621593429579" duration="6091000" />
+      <workItem from="1621622896963" duration="1175000" />
+      <workItem from="1621840633724" duration="11000" />
+      <workItem from="1621892139047" duration="215000" />
+      <workItem from="1622016249803" duration="1226000" />
+      <workItem from="1622027180805" duration="690000" />
+      <workItem from="1622053847237" duration="22000" />
+      <workItem from="1623367556063" duration="1439000" />
+      <workItem from="1623791280745" duration="1419000" />
+      <workItem from="1623821289746" duration="2245000" />
+      <workItem from="1623832071953" duration="14000" />
+      <workItem from="1624005650270" duration="12000" />
+      <workItem from="1624271443410" duration="67000" />
+      <workItem from="1624271626238" duration="792000" />
+      <workItem from="1624278804727" duration="102000" />
+      <workItem from="1624466305063" duration="933000" />
+      <workItem from="1624467263212" duration="2168000" />
+      <workItem from="1624469934665" duration="745000" />
+      <workItem from="1624491543786" duration="25000" />
+    </task>
+    <task id="LOCAL-00022" summary="EventListComponent - all teams bug">
+      <created>1615569270031</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1615569270031</updated>
+    </task>
+    <task id="LOCAL-00023" summary="2.1 Izaberi klub centriari (predvidi gumb ispod)">
+      <created>1615570981304</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1615570981304</updated>
+    </task>
+    <task id="LOCAL-00024" summary="poisson-events.component">
+      <created>1615572604205</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1615572604205</updated>
+    </task>
+    <task id="LOCAL-00025" summary="event-list.component table">
+      <created>1617976337902</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1617976337902</updated>
+    </task>
+    <task id="LOCAL-00026" summary="refactor app">
+      <created>1618264552134</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1618264552134</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor app">
+      <created>1618264560378</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1618264560378</updated>
+    </task>
+    <task id="LOCAL-00028" summary="liga-review-best-attack">
+      <created>1618346939716</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1618346939716</updated>
+    </task>
+    <task id="LOCAL-00029" summary="liga-review-best-defence">
+      <created>1618350241810</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1618350241810</updated>
+    </task>
+    <task id="LOCAL-00030" summary="league-statistics-goals">
+      <created>1618350933628</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1618350933628</updated>
+    </task>
+    <task id="LOCAL-00031" summary="refactor nastavak">
+      <created>1618350976105</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1618350976105</updated>
+    </task>
+    <task id="LOCAL-00032" summary="league-frequency-chart">
+      <created>1618516448517</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1618516448518</updated>
+    </task>
+    <task id="LOCAL-00033" summary="app-league-relative-frequency-chart">
+      <created>1618689126675</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1618689126675</updated>
+    </task>
+    <task id="LOCAL-00034" summary="app-league-relative-frequency-chart app.module.ts">
+      <created>1618689140571</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1618689140571</updated>
+    </task>
+    <task id="LOCAL-00035" summary="app-league-frequency-polygon">
+      <created>1618690320692</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1618690320692</updated>
+    </task>
+    <task id="LOCAL-00036" summary="liga-review-best-attack fetch data">
+      <created>1618898391197</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1618898391197</updated>
+    </task>
+    <task id="LOCAL-00037" summary="app-league-frequency-polygon">
+      <created>1618898416095</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1618898416095</updated>
+    </task>
+    <task id="LOCAL-00038" summary="liga-review-best-attack">
+      <created>1619006070856</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1619006070856</updated>
+    </task>
+    <task id="LOCAL-00039" summary="liga-review-goal">
+      <created>1619011114520</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1619011114520</updated>
+    </task>
+    <task id="LOCAL-00040" summary="build">
+      <created>1619011233876</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1619011233876</updated>
+    </task>
+    <task id="LOCAL-00041" summary="liga-review-best-defense">
+      <created>1619012996275</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1619012996275</updated>
+    </task>
+    <task id="LOCAL-00042" summary="league-statistics-goals all table">
+      <created>1619015749186</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1619015749186</updated>
+    </task>
+    <task id="LOCAL-00043" summary="LeagueStatisticsGoalsComponent">
+      <created>1619184517462</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1619184517462</updated>
+    </task>
+    <task id="LOCAL-00044" summary="league-frequency-chart all">
+      <created>1619206871884</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1619206871884</updated>
+    </task>
+    <task id="LOCAL-00045" summary="league-frequency-chart">
+      <created>1619252284316</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1619252284316</updated>
+    </task>
+    <task id="LOCAL-00046" summary="poisson.component">
+      <created>1619720036440</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1619720036440</updated>
+    </task>
+    <task id="LOCAL-00047" summary="poisson-car">
+      <created>1619720078200</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1619720078200</updated>
+    </task>
+    <task id="LOCAL-00048" summary="LigaReviewGoal">
+      <created>1619792170453</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1619792170453</updated>
+    </task>
+    <task id="LOCAL-00049" summary="poredak">
+      <created>1619948174390</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1619948174390</updated>
+    </task>
+    <task id="LOCAL-00050" summary="leagueReview">
+      <created>1619948653034</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1619948653035</updated>
+    </task>
+    <task id="LOCAL-00051" summary="league-frequency-chart.component">
+      <created>1619968309126</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1619968309127</updated>
+    </task>
+    <task id="LOCAL-00052" summary="leagueRelativeFrequencyChartWrapper">
+      <created>1619982160232</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1619982160233</updated>
+    </task>
+    <task id="LOCAL-00053" summary="LeagueFrequencyPolygon">
+      <created>1620161693112</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1620161693113</updated>
+    </task>
+    <task id="LOCAL-00054" summary="LeagueRelativeFrequencyPolygon">
+      <created>1620206554581</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1620206554581</updated>
+    </task>
+    <task id="LOCAL-00055" summary="deploy">
+      <created>1620208246266</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1620208246267</updated>
+    </task>
+    <task id="LOCAL-00056" summary="deploy fix">
+      <created>1620209168600</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1620209168600</updated>
+    </task>
+    <task id="LOCAL-00057" summary="poisson-card-details.component.html">
+      <created>1620471069279</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1620471069280</updated>
+    </task>
+    <task id="LOCAL-00058" summary="poisson-card.component.html">
+      <created>1620497045865</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1620497045867</updated>
+    </task>
+    <task id="LOCAL-00059" summary="poisson-card-details.service.ts">
+      <created>1620501832527</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1620501832528</updated>
+    </task>
+    <task id="LOCAL-00060" summary="match-dialog.component">
+      <created>1620543261368</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1620543261369</updated>
+    </task>
+    <task id="LOCAL-00061" summary="page fix">
+      <created>1620574281038</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1620574281045</updated>
+    </task>
+    <task id="LOCAL-00062" summary="poisson-card.component.html">
+      <created>1620769433654</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1620769433655</updated>
+    </task>
+    <task id="LOCAL-00063" summary="simulation.component">
+      <created>1620803227243</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1620803227243</updated>
+    </task>
+    <task id="LOCAL-00064" summary="simulation.component.html">
+      <created>1620938335502</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1620938335502</updated>
+    </task>
+    <task id="LOCAL-00065" summary="build">
+      <created>1620939368948</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1620939368949</updated>
+    </task>
+    <task id="LOCAL-00066" summary="home page">
+      <created>1621543177819</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1621543177819</updated>
+    </task>
+    <task id="LOCAL-00067" summary="poisson card details">
+      <created>1621603664080</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1621603664080</updated>
+    </task>
+    <task id="LOCAL-00068" summary="probability">
+      <created>1621604224481</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1621604224481</updated>
+    </task>
+    <task id="LOCAL-00069" summary="build">
+      <created>1621623052753</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1621623052754</updated>
+    </task>
+    <task id="LOCAL-00070" summary="build">
+      <created>1624467117458</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1624467117458</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/zavrsni-frontend/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="LeagueStatisticsGoalsComponent" />
+    <MESSAGE value="league-frequency-chart all" />
+    <MESSAGE value="league-frequency-chart" />
+    <MESSAGE value="poisson.component" />
+    <MESSAGE value="poisson-car" />
+    <MESSAGE value="LigaReviewGoal" />
+    <MESSAGE value="poredak" />
+    <MESSAGE value="leagueReview" />
+    <MESSAGE value="league-frequency-chart.component" />
+    <MESSAGE value="leagueRelativeFrequencyChartWrapper" />
+    <MESSAGE value="LeagueFrequencyPolygon" />
+    <MESSAGE value="LeagueRelativeFrequencyPolygon" />
+    <MESSAGE value="deploy" />
+    <MESSAGE value="deploy fix" />
+    <MESSAGE value="poisson-card-details.component.html" />
+    <MESSAGE value="poisson-card-details.service.ts" />
+    <MESSAGE value="match-dialog.component" />
+    <MESSAGE value="page fix" />
+    <MESSAGE value="poisson-card.component.html" />
+    <MESSAGE value="simulation.component" />
+    <MESSAGE value="simulation.component.html" />
+    <MESSAGE value="home page" />
+    <MESSAGE value="poisson card details" />
+    <MESSAGE value="probability" />
+    <MESSAGE value="build" />
+    <option name="LAST_COMMIT_MESSAGE" value="build" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619791992835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619791992835" />
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1620205985592">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1620205985592" />
+    <state x="535" y="118" key="CommitChangelistDialog2" timestamp="1624469737736">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="535" y="118" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621604223995" />
+    <state x="535" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1624469737736" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1620206491762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620206491762" />
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1624491567390">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1624491567390" />
+    <state x="671" y="233" key="RollbackChangesDialog" timestamp="1624272420683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="671" y="233" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624272420683" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1619941158442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619941158442" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1624470075253">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621604289699" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624470075253" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619947581633">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619947581633" />
+    <state x="237" y="653" key="com.intellij.ide.util.TipDialog" timestamp="1624491543778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="237" y="653" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624491543778" />
+    <state x="768" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620768536135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="768" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620768536135" />
+    <state x="667" y="276" width="893" height="536" key="find.popup" timestamp="1624468480600">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="276" width="893" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621603431393" />
+    <state x="667" y="276" width="893" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1624468480600" />
+    <state x="823" y="446" width="348" height="298" key="org.angular.cli.generate" timestamp="1623367961236">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2743" y="446" width="348" height="298" key="org.angular.cli.generate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621601373930" />
+    <state x="823" y="446" width="348" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1623367961236" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1621601432455">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621601432455" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1620542699724" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1621543148120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1621543148120" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/zavrsni-frontend/src/app/components/liga-review-goals/liga-review-goals.component.html</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/zavrsni-frontend/src/app/components/liga-review-goals/liga-review-goals.component.ts</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/zavrsni-frontend/src/app/components/league-statistics-goals/league-statistics-goals.component.html</url>
+          <line>3</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/zavrsni-frontend/src/app/components/league-frequency-chart/league-frequency-chart.component.html</url>
+          <line>5</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/zavrsni-frontend/src/app/components/league-frequency-chart/league-frequency-chart.component.ts</url>
+          <line>18</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/zavrsni-frontend/src/app/components/league-frequency-polygon/league-frequency-polygon.component.ts</url>
+          <line>53</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
